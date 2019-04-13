@@ -1,6 +1,28 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(void){
+int main(void)
+{
+
     printf("DDDDDD");
+    printf("DDDDDD");
+    printf("DDDDDD");
+    printf("DDDDDD");
+    printf("DDDDDD");
+    printf("DDDDDD");
+    printf("DDDDDD");
+    printf("DDDDDD");
+    printf("DDDDDD");
+    printf("DDDDDD");
+    printf("DDDDDD");
+    printf("DDDDDD");
+    printf("DDDDDD");
+    printf("DDDDDD");
+    printf("DDDDDD");
+    printf("DDDDDD");
+    printf("DDDDDD");
+    printf("DDDDDD");
+    printf("DDDDDD");
+    printf("DDDDDD");
+
     return 0;
 }
