@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-	printf("1~100±îÁö 2¾¿Áõ°¡ÇÑ °ª: ");
+	printf("1~100ê¹Œì§€ 2ì”¨ ì¦ê°€í•œ ê°’: ");
 
 	int i = 0, sum = 0;
 	while (i <= 100) {
