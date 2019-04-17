@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-	printf("1~100까지 2씨 증가한 값: ");
-
+	printf("1~100까지 2씩 증가한 값: ");
 	int i = 0, sum = 0;
 	while (i <= 100) {
 		sum = sum + i;;
