@@ -6,7 +6,7 @@ int main(){
 
     scanf("%d", &n);
 
-    for( i = 0; i < n+1; i++){
+    for( i = 0; i < n; i++){
         printf("%d ", fibonacci(i));
     }
     return 0;
