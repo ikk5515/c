@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main(void) {
 
 	int c;
@@ -8,9 +7,9 @@ int main(void) {
 	printf("섭씨     화씨\n");
 	printf("-------------\n");
 
-	for (c = 10; c <= 100; c++) {
+	for (c = 10; c <= 100; c+=10) {
 		sum = 1.8*c + 32;
-		printf("%d         %d\n", c, sum);
+		printf("%d         %3d\n", c, sum);
 	}
 	return 0;
 }
