@@ -9,7 +9,7 @@ int main(void) {
 	while (c <= 100 ) {
 		sum = 1.8*c + 32;
 		printf("%d         %d\n", c, sum);
-		c++;
+		c+=10;
 	}
 	return 0;
 }

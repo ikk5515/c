@@ -9,7 +9,7 @@ int main(void) {
 
 	for (c = 10; c <= 100; c+=10) {
 		sum = 1.8*c + 32;
-		printf("%d         %3d\n", c, sum);
+		printf("%d         %d\n", c, sum);
 	}
 	return 0;
 }
