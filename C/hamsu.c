@@ -13,6 +13,6 @@ int div(int x, int y){
 }
 int main(void){
     int x =20, y =10;
-    printf("%d %d %d %d", add(x,y), sub(x,y), multi(x,y), div(x,y));
+    printf("합: %d 차: %d 곱: %d 몫: %d", add(x,y), sub(x,y), multi(x,y), div(x,y));
     return 0;
 }
