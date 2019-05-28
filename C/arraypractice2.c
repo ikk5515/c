@@ -15,7 +15,7 @@ int main() {
 */
 
 int main() {
-	int a[3][4] = { 10, };
+	int a[3][4];
 	int i, j, k = 10;
 	for (i = 0; i < 3; i++) {
 		for (j = 0; j < 4; j++) {
