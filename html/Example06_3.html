@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .galleryZone {text-align: center}
+        #btn1 {position: fixed; bottom: 100px; right: 500px; padding: 10px;}
+        #btn2 {position: fixed; bottom: 100px; right: 400px; padding: 10px;}
+    </style>
+    <script>
+        var num=1;
+        function gallery(direct) {
+            if(direct) {
+                if(num==7) num=0;
+                num++;
+            }
+            else{
+                if(num==1) num=8;
+                num--;
+            }
+            var imgTag = document.getElementById("photo");
+            imgTag.setAttribute("src", "media/cat"+num+".png");
+        }
+    </script>
+</head>
+<body>
+    <div class="galleryZone">
+        <p> <img src="media/cat1.png" id="photo" alt="">
+        </p>
+        <button id ="btn1" onclick="gallery(0)"> 이전 </button>
+        <button id ="btn2" onclick="gallery(1)"> 다음 </button>
+
+    </div>
+</body>
+</html>
