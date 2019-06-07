@@ -20,56 +20,50 @@ int main() {
 	printf("10! = %d", factoral(5));
 }
 */
-int quicksort(int a[], int left, int right)
-{
-	int i, j;
-	int pivot_value;
-	int tmp;
-	if (left >= right) return 0;
-	i = left + 1; // Pivot°ª Á¦¿ÜÇÏ°í
-	j = right;
-	// ¿ÞÆí ³¡´ÜÀÇ Ç×¸ñÀÇ °ªÀ» Pivot °ªÀ¸·Î ¼±Á¤
-	pivot_value = a[left];
-	while (1)
-	{
-		// Pivot °ªº¸´Ù Å« °ª (ÀÌ»ó) ÀÏ¶§ ±îÁö i Áõ°¡
-		while ((i <= right) && (a[i] <= pivot_value))
-		{
-			i++;
+
+	int quicksort(int a[], int left, int right) {
+		int i, j;
+		int pivot_value;
+		int tmp;
+		if (left >= right) return 0;
+		i = left + 1; // Pivotê°’ ì œì™¸í•˜ê³ 
+		j = right;
+		// ì™¼íŽ¸ ëë‹¨ì˜ í•­ëª©ì˜ ê°’ì„ Pivot ê°’ìœ¼ë¡œ ì„ ì •
+		pivot_value = a[left];
+		while (1) {
+			// Pivot ê°’ë³´ë‹¤ í° ê°’ (ì´ìƒ) ì¼ë•Œ ê¹Œì§€ i ì¦ê°€
+			while ((i <= right) && (a[i] <= pivot_value)) {
+				i++;
+				}
+				// Pivot ê°’ë³´ë‹¤ ìž‘ì€ ê°’ (ë¯¸ë§Œ) ì¼ë•Œ ê¹Œì§€ j ê°ì†Œ
+				while ((j >= left) && (a[j] > pivot_value)) {
+					j--;
+					}
+					if (i < j) {// iì™€ jê°€ ì•„ì§ ì¶©ëŒì¡°ê±´ì´ ì•„ë‹ˆë¼ë©´ iì™€ j í•­ëª©ì„ ì„œë¡œ êµí™˜
+						tmp = a[i];
+						a[i] = a[j];
+						a[j] = tmp;
+						}
+					else { // ì¶©ëŒì¡°ê±´ì´ë©´, jí•­ëª©ê³¼ pivot í•­ëª©ì„ ì„œë¡œ êµí™˜í•˜ê³  ì •ë ¬ ì •ì§€
+						tmp = a[j];
+						a[j] = pivot_value;
+						a[left] = tmp;
+						break;
+						}
+				}
+				// ìž¬ê·€ì ìœ¼ë¡œ êµí™˜ëœ pivot ê°’ì˜ ìœ„ì¹˜ j ë¥¼ ê¸°ì¤€ìœ¼ë¡œ ì™¼ìª½ê³¼ ì˜¤ë¥¸ìª½ ì •ë ¬
+			quicksort(a, left, j - 1);
+			quicksort(a, j + 1, right);
+			return 0;
+			}
+	int main(void) {
+		int a[8] = { 54,23,10,8,66,78,12,25 };
+		int N = 8;
+		printf("\n [ì´ˆê¸°ìƒíƒœ] \n");
+		for (int i = 0; i <= N - 1; i++) printf(" %d", a[i]);
+		printf("\n");
+		quicksort(a, 0, N - 1);
+		printf("\n [ì •ë ¬ í›„] \n");
+		for (int i = 0; i <= N - 1; i++) printf(" %d", a[i]);
+			printf("\n");
 		}
-		// Pivot °ªº¸´Ù ÀÛÀº °ª (¹Ì¸¸) ÀÏ¶§ ±îÁö j °¨¼Ò
-		while ((j >= left) && (a[j] > pivot_value))
-		{
-			j--;
-		}
-		if (i < j) // i¿Í j°¡ ¾ÆÁ÷ Ãæµ¹Á¶°ÇÀÌ ¾Æ´Ï¶ó¸é i¿Í j Ç×¸ñÀ» ¼­·Î ±³È¯
-		{
-			tmp = a[i];
-			a[i] = a[j];
-			a[j] = tmp;
-		}
-		else // Ãæµ¹Á¶°ÇÀÌ¸é, jÇ×¸ñ°ú pivot Ç×¸ñÀ» ¼­·Î ±³È¯ÇÏ°í Á¤·Ä Á¤Áö
-		{
-			tmp = a[j];
-			a[j] = pivot_value;
-			a[left] = tmp;
-			break;
-		}
-	}
-	// Àç±ÍÀûÀ¸·Î ±³È¯µÈ pivot °ªÀÇ À§Ä¡ j ¸¦ ±âÁØÀ¸·Î ¿ÞÂÊ°ú ¿À¸¥ÂÊ Á¤·Ä
-	quicksort(a, left, j - 1);
-	quicksort(a, j + 1, right);
-	return 0;
-}
-void main(void)
-{
-	int a[8] = { 54,23,10,8,66,78,12,25 };
-	int N = 8;
-	printf("\n [ÃÊ±â»óÅÂ] \n");
-	for (int i = 0; i <= N - 1; i++) printf(" %d", a[i]);
-	printf("\n");
-	quicksort(a, 0, N - 1);
-	printf("\n [Á¤·Ä ÈÄ] \n");
-	for (int i = 0; i <= N - 1; i++) printf(" %d", a[i]);
-	printf("\n");
-}
