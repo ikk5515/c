@@ -8,7 +8,7 @@ int main(void) {
 
 	for (i= 0; i < 3; i++) {
 		stack[top] = ask;
-		printf("%c ÀÚµ¿Â÷°¡ µ¿±¼¿¡ µé¾î°¨ \n", stack[top]);
+		printf("%c ìžë™ì°¨ê°€ ë™êµ´ì— ë“¤ì–´ê° \n", stack[top]);
 		top++;
 		ask++;
 	}
@@ -16,7 +16,7 @@ int main(void) {
 
 	for (i = 0; i < 3; i++) {
 		top--;
-		printf("%c ÀÚµ¿Â÷°¡ µ¿±¼À» ºüÁ®³ª°¨ \n", stack[top]);
+		printf("%c ìžë™ì°¨ê°€ ë™êµ´ì„ ë¹ ì ¸ë‚˜ê° \n", stack[top]);
 		stack[top] = ' ';
 	}
 }
