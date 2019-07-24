@@ -31,12 +31,12 @@ void showSnail(int n){
 }
 
 int main(void) {
- int input; // 입력받을 자연수 변수
+    int input; // 입력받을 자연수 변수
  
- printf("숫자를 입력하시오 : ");
- scanf("%d", &input);
- printf("\n");
+    printf("숫자를 입력하시오 : ");
+    scanf("%d", &input);
+    printf("\n");
  
- showSnail(input);
- return 0;
+    showSnail(input);
+    return 0;
 }
