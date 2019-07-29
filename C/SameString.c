@@ -30,8 +30,8 @@ int CompAge(char str1[], char str2[]){   //나이 비교
     int Idx2 = GetSapceIdx(str2);
     int age1, age2;
 
-    age1 = atoi(&str1[Idx1+1]);   //str1[Idx+1]이 나이가 저장된 위치
-    age2 = atoi(&str2[Idx2+1]);   //str2[Idx+1]이 나이가 저장된 위치
+    age1 = atoi(&str1[Idx1+1]);   //str1[Idx1+1]이 나이가 저장된 위치
+    age2 = atoi(&str2[Idx2+1]);   //str2[Idx2+1]이 나이가 저장된 위치
 
     if(age1==age2){     //나이가 같을경우
         return 1;
