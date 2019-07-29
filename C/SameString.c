@@ -10,7 +10,7 @@ int GetSapceIdx(char str[]){
             return i;
         }
     }
-    return -1;        //공백문자가 존재하지 않을 경우에 반환한다.
+    return -1;        //공백문자가 존재하지 않을 경우에 반환
 }
 
 int CompName(char str1[], char str2[]){    //이름 비교
