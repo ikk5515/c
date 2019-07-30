@@ -12,7 +12,7 @@ int main(void){
     struct point pos3 = {3,3};
 
     pos1.ptr = &pos2;          //pos1과 pos2를 연결
-    pos2.ptr = &pos3;          //pos2와 pos3를 연결
+    pos2.ptr = &pos3;          //pos2와 pos3을 연결
     pos3.ptr = &pos1;          //pos3을 pos1과 연결
 
     printf("점의 관계\n\n");
