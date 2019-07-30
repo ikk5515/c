@@ -8,18 +8,26 @@ struct employee{
 };
 
 int main(void){
-    struct employee emp;
+    struct employee emp[3];
+    int i;
     
-    printf("종업원 이름 입력: ");
-    scanf("%s", emp.name);
+    for(i=0; i<3; i++){
+    printf("\n종업원 이름 입력: ");
+    scanf("%s", emp[i].name);
     printf("주민등록번호 입력: ");
-    scanf("%s", emp.Num);
+    scanf("%s", emp[i].Num);
     printf("급여정보 입력: ");
-    scanf("%d", &emp.salary);
+    scanf("%d", &emp[i].salary);
+    printf("------------------------------------------");
+    }
 
-    printf("이름: %s\n", emp.name);
-    printf("주민등록번호: %s\n", emp.Num);
-    printf("급여정보: %d\n", emp.salary);
+        for(i=0; i<3; i++){
+            printf("\n\n");
+            printf("이름: %s\n\n", emp[i].name);
+            printf("주민등록번호: %s\n\n", emp[i].Num);
+            printf("급여정보: %d\n\n", emp[i].salary);
+            printf("-----------------------------------------");
+        }
 
     return 0;
 }
