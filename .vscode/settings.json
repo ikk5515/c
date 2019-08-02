@@ -15,5 +15,6 @@
           "emmet.triggerExpansionOnTab": true,
           "editor.tabCompletion": "on",
                         "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}${activeEditorLong}",
+                        "git.ignoreLimitWarning": true,
                         //"liveSassCompile.settings.includeItems": ["css/scss/test.scss"]
                     }
