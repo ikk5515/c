@@ -16,5 +16,6 @@
           "editor.tabCompletion": "on",
                         "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}${activeEditorLong}",
                         "git.ignoreLimitWarning": true,
+                        "C_Cpp.errorSquiggles": true,
                         //"liveSassCompile.settings.includeItems": ["css/scss/test.scss"]
                     }
