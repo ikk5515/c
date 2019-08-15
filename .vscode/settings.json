@@ -16,7 +16,7 @@
           "editor.tabCompletion": "on",
                         "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}${activeEditorLong}",
                         "git.ignoreLimitWarning": true,
-                        "C_Cpp.errorSquiggles": true,
+                        "C_Cpp.errorSquiggles": "Enabled",
                         "files.exclude": {
                             "**/.classpath": true,
                             "**/.project": true,
@@ -24,5 +24,8 @@
                             "**/.factorypath": true
                         },
                         "python.pythonPath": "/usr/local/bin/python3",
+                        "python.linting.pylintEnabled": true,
+                        "python.linting.enabled": true,
+                        "python.linting.pep8Enabled": false,
                         //"liveSassCompile.settings.includeItems": ["css/scss/test.scss"]
                     }
