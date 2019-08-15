@@ -8,27 +8,27 @@
   },
   "tasks": [
     {
-            "label": "Project Label",
-            "type": "shell",
-            "command": "python3",
-            "args": [
-                "${file}"
-            ],
-            "presentation": {
-                "reveal": "always",
-                "panel": "new"
-            },
-            "options": {
-                "env": {
-                    "PYTHONIOENCODING": "UTF-8"
-                }
-            },
-            "group": {
+      "label": "Project Label",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "${file}"
+      ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "options": {
+        "env": {
+          "PYTHONIOENCODING": "UTF-8"
+        }
+      },
+      "group": {
                 "kind": "build",
                 "isDefault": true
             }
-        },
-    {
+          },
+            {
       "label": "save and compile for C++",
       "command": "g++",
       "args": [
@@ -60,7 +60,10 @@
         "-o",
         "${fileDirname}/${fileBasenameNoExtension}"
       ],
-      "group": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
       "problemMatcher": {
         "fileLocation": [
           "relative",
