@@ -23,5 +23,6 @@
                             "**/.settings": true,
                             "**/.factorypath": true
                         },
+                        "python.pythonPath": "/usr/local/bin/python3",
                         //"liveSassCompile.settings.includeItems": ["css/scss/test.scss"]
                     }
