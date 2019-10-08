@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 
 int dp[1000001], N;       //동적 계획법 , 입력받는 개수
 int T[6];              // 소요 기간
