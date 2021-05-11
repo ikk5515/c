@@ -27,5 +27,8 @@
                         "python.linting.pylintEnabled": true,
                         "python.linting.enabled": true,
                         "python.linting.pep8Enabled": false,
+                        "files.associations": {
+                            "1~100_2++.C": "cpp"
+                        },
                         //"liveSassCompile.settings.includeItems": ["css/scss/test.scss"]
                     }
