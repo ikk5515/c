@@ -26,7 +26,7 @@
                         "python.pythonPath": "/usr/local/bin/python3",
                         "python.linting.pylintEnabled": true,
                         "python.linting.enabled": true,
-                        "python.linting.pep8Enabled": false,
+                        "python.linting.pycodestyleEnabled": false,
                         "files.associations": {
                             "stdio.h": "c"
                         },
