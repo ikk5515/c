@@ -26,9 +26,15 @@
                         "python.pythonPath": "/usr/local/bin/python3",
                         "python.linting.pylintEnabled": true,
                         "python.linting.enabled": true,
+<<<<<<< HEAD
+                        "python.linting.pycodestyleEnabled": false,
+                        "files.associations": {
+                            "stdio.h": "c"
+=======
                         "python.linting.pep8Enabled": false,
                         "files.associations": {
                             "1~100_2++.C": "cpp"
+>>>>>>> 927f3d4ceb1edf65e0152c0abc7218b147dee52c
                         },
                         //"liveSassCompile.settings.includeItems": ["css/scss/test.scss"]
                     }
