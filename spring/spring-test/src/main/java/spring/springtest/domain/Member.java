@@ -2,15 +2,15 @@ package spring.springtest.domain;
 
 public class Member {
 
-    private Long ID;
+    private Long id;
     private String name;
 
     public Long getID() {
-        return ID;
+        return id;
     }
 
-    public void setID(Long ID) {
-        this.ID = ID;
+    public void setID(Long id) {
+        this.id = id;
     }
 
     public String getName() {

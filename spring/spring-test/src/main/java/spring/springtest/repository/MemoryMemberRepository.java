@@ -4,8 +4,8 @@ import spring.springtest.domain.Member;
 
 import java.util.*;
 
-public class MemoryMemberRepository implements MemberRepository {
 
+public class MemoryMemberRepository implements MemberRepository {
     private static Map<Long, Member> store = new HashMap<>();
     private static long sequence = 0L;
 
@@ -18,7 +18,7 @@ public class MemoryMemberRepository implements MemberRepository {
 
     @Override
     public Optional<Member> findByID(Long id) {
-        return Optional.ofNullable(store.get(id));
+        return Optional.ofNullable(store.get(id));   // 널이 있어도 일단 실행
     }
 
     @Override
