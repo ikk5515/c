@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "runner": "iTerm",
+  "runner": "terminal",
   "type": "shell",
   "echoCommand": true,
   "presentation": {
