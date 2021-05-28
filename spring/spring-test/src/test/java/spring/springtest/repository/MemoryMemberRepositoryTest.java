@@ -17,7 +17,7 @@ class MemoryMemberRepositoryTest {
 
     @AfterEach
     public void afterEach(){
-        repository.clearstore();  //Test가 실행이되고 끝날때마다 repository clear
+        repository.clearstore();  //test 가실행이되고 끝날때마다 repository clear
     }
 
     @Test
@@ -45,18 +45,20 @@ class MemoryMemberRepositoryTest {
         repository.save(member2);
 
         Member result = repository.findByName("spring1").get();
+        //Member result = repository.findByName("spring2").get();
 
         assertThat(result).isEqualTo(member1);
+        //assertThat(result).isEqualTo(member2);
     }
 
     @Test
     public  void findAll(){
         Member member1 = new Member();
-        member1.setName("spirng1");
+        member1.setName("spring1");
         repository.save(member1);
 
         Member member2 = new Member();
-        member2.setName("spirng2");
+        member2.setName("spring2");
         repository.save(member2);
 
         List<Member> result = repository.findAll();
