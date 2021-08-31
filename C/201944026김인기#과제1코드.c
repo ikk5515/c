@@ -10,7 +10,7 @@ int main(){
     
     printf("두 배열의 반대 원소의 위치의 합 \n");
     
-    for(i = 0; i<5; i++)
+    for(i = 0; i<5; ++i)
         printf(" %d + %d = %d\n",x[i], y[4-i], z[i]);
 
     return 0;
