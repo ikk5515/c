@@ -20,7 +20,7 @@ int main(){
                 temp = score[j]; score[j] = score[j+1]; score[j+1] = temp;
         }
         
-    } 
+    }
     for (i = 0; i < 10; i++)
     {
         printf("%d 번째 크기의 값: ",i+1);
