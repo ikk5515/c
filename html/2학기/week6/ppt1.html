@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hearders = document.querySelectorAll("h1");
+            hearders.forEach((hearder) => {
+                hearder.textContent = "HEADERS"
+                hearder.style.color = "white"
+                hearder.style.backgroundColor = "black"
+                hearder.style.padding = "10px"
+            })
+        })
+    </script>
+
+</head>
+<body>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+</body>
+</html>
