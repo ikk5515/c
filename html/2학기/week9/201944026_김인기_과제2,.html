@@ -14,7 +14,7 @@
         }
 
         Product.prototype.calculate = function (_weight) {
-        console.log(`'${_weight / this.weight * this.price}원'`);
+        console.log(`${_weight / this.weight * this.price}원`);
         }
 
         let product = new Product(100, 1690);
