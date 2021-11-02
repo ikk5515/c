@@ -5,20 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-    </style>
     <script>
-        const story = {
-            이름 : "Hong's Story" ,
-            가격 : 30000,
-            저자 : "장길산",
-            ISBN : 97888868481902,
-            페이지수 : 620
+        //생성자 함수
+        function Product (price) {
+            this.price = price;
         }
-
-        console.log(story)
+        //프로토타입에 메소드 선언
+        Product.prototype.price = function() {
+        }
     </script>
 </head>
 <body>
+    
 </body>
 </html>

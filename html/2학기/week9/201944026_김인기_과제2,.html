@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //생성자 함수
+        function Product(weight, price) {
+        name = '삼겹살';
+        this.weight = weight;
+        this.price = price;
+        }
+
+        Product.prototype.calculate = function (_weight) {
+        console.log(`'${_weight / this.weight * this.price}원'`);
+        }
+
+        let product = new Product(100, 1690);
+
+        product.calculate(200);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
