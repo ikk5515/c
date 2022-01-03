@@ -13,7 +13,7 @@ void main(){
         printf("%3d", i + 1);
         for (j = 0; j < 3; j++){
             printf("%5d", jumsu[i][j]); // 점수 출력
-            sum += jumsu[i][j];         // 총점 계산ㄱ,
+            sum += jumsu[i][j];         // 총점 계산기,
         }
             printf("%6d %5.1f\n", sum, sum / 3.0);
     }

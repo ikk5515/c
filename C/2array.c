@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 int main(void){
     int ary[3][9];
     int i, j;
