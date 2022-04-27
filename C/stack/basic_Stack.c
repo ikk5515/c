@@ -27,18 +27,15 @@ int isEmpty_Stack() {
 
 void push(int item) {
     if (isFull_Stack()) {
-        printf("Stack Overflow \n");
     }
     stack[++top] = item;
 }
 
 int pop() {
     if (top == -1) {
-        printf("Stack is Empty\n");
         return -1;
     }
     return stack[top--];
-
 }
 
 int show_Size() {
@@ -80,7 +77,7 @@ int main(void) {
         }
 
         else if (!(strcmp (command, "empty"))) {
-            printf("%d", isEmpty_Stack());
+            printf("%d\n", isEmpty_Stack());
         }
     }
 }
