@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define MAX_STACK_SIZE 100
+#define MAX_STACK_SIZE 100      // Stack의 MAX_SIZE를 100으로 선언
 int stack[MAX_STACK_SIZE];
 int top = -1;
 
