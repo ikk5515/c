@@ -2,7 +2,6 @@
 #include <string.h>
 
 #define MAX_STACK_SIZE 100000
-int STACK_SIZE = MAX_STACK_SIZE;
 int stack [MAX_STACK_SIZE];
 int top = -1;
 
